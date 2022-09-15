@@ -7,6 +7,44 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Installation
+
+### To install the backend dependecies.
+
+```
+composer install
+```
+
+### To generate the APP Key
+
+```
+php artisan key:generate
+```
+
+### After setting the DB params in environment you can call below command.
+
+```
+php artisan migrate --seed
+```
+
+### Install the frontend dependecies using below command and compile the assets.
+
+```
+npm i && npm run dev
+```
+
+### Run the below command to start the websocket server, you can change the port as per your need.
+
+```
+php artisan websocket:serve
+```
+
+### If you want to use the event using queue jobs.
+
+```
+php artisan queue:work
+```
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
